@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Валерія Альохіна</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --red: #d12c2a;
+    --dark: #111;
+    --white: #fff;
+    --gold: #d4af37;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(135deg, #111, #d12c2a);
+    color: white;
+}
+
+/* HERO */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    height: 100vh;
+    padding: 40px;
+}
+
+/* ЛІВА ЧАСТИНА */
+.hero-text {
+    max-width: 400px;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+}
+
+.hero-text p {
+    color: var(--gold);
+}
+
+/* ЛОГО */
+.logo {
+    width: 120px;
+    margin-bottom: 20px;
+}
+
+/* ФОТО */
+.hero-img {
+    width: 350px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+}
+
+/* КНОПКА */
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: var(--red);
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+/* СЕКЦІЯ */
+section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+/* КАРТКИ */
+.grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: rgba(255,255,255,0.05);
+    padding: 25px;
+    border-radius: 15px;
+    width: 250px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* CONTACT */
+.contact {
+    background: #111;
+}
+
+/* МОБІЛКА */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-img {
+        width: 250px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+
+    <div class="hero-text">
+        <img src="logo.png" class="logo">
+
+        <h1>Валерія Альохіна</h1>
+        <p>Менеджмент • Ефективність • Розвиток</p>
+
+        <a href="#about" class="btn">Дізнатись більше</a>
+    </div>
+
+    <img src="fotka.png" class="hero-img">
+
+</section>
+
+<section id="about">
+    <h2>Про мене</h2>
+
+    <div class="grid">
+        <div class="card">
+            <h3>Відповідальність</h3>
+            <p>Дотримуюсь дедлайнів і виконую обіцянки</p>
+        </div>
+
+        <div class="card">
+            <h3>Розвиток</h3>
+            <p>Постійно навчаюсь і росту</p>
+        </div>
+
+        <div class="card">
+            <h3>Комунікація</h3>
+            <p>Будую сильні зв’язки в команді</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Портфоліо</h2>
+
+    <div class="grid">
+        <div class="card">
+            <h3>Кейс</h3>
+            <p>Управління командою</p>
+        </div>
+
+        <div class="card">
+            <h3>Аналіз</h3>
+            <p>Ринкові дослідження</p>
+        </div>
+
+        <div class="card">
+            <h3>Процеси</h3>
+            <p>Оптимізація роботи</p>
+        </div>
+    </div>
+</section>
+
+<section class="contact">
+    <h2>Контакти</h2>
+
+    <div class="card" style="margin:auto;">
+        <p>📞 +380951891559</p>
+        <p>📷 @alokhinaaaa</p>
+        <p>✉️ lerkaalokhina@gmail.com</p>
+    </div>
+</section>
+
+</body>
+</html>
